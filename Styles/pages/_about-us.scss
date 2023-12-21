@@ -7,6 +7,9 @@
         line-height: 30px;
       }
     }
+    @media screen and (min-width:800px){
+      grid-template-columns: 1fr;
+    }
     
   }
 
@@ -32,6 +35,9 @@
           }
         }
       }
+    }
+    @media screen and (min-width:800px){
+      
     }
   }
 

@@ -27,10 +27,14 @@ footer{
         margin-bottom: 12px;
         font-size: 14px;
         width: fit-content;
+        transition: all .3s ease-in-out;
+        &:hover{
+          color: white;
+          padding-left: 8px;
+          transition: all .3s ease-in-out;
+        }
       }
     }
-    
-
   }
   p{
     position: relative;
@@ -44,7 +48,6 @@ footer{
       color: white;
     }
   }
-  
   .back-up{
     position: fixed;
     bottom: 0;
@@ -58,7 +61,14 @@ footer{
     align-items: center;
     scroll-behavior: smooth;
   }
-
+  @media screen and (min-width:800px){
+    .wrapper{
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 2rem;
+      margin-bottom: 50px;
+    }
+  }
 }
 
 

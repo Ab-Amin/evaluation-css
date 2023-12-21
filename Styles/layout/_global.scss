@@ -6,6 +6,10 @@ body{
 .wrapper{
   width: 95%;
   margin: 0 auto;
+  @media screen and (min-width:800px) {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
 }
 
 a{
@@ -13,6 +17,9 @@ a{
 }
 
 .menu-burger{
+  @media screen and (min-width:800px){
+    display: none;
+  }
   background-color: red;
   margin-top: 10px;
   margin-left: calc(5% / 2);
@@ -70,6 +77,8 @@ a{
   font-size: 14px;
   font-weight: bold;
   padding: 4px 15px;
+
+
 }
 
 h1{
@@ -133,4 +142,34 @@ input{
   border: none;
 }
 
+nav{
+  display: none;
+  @media screen and (min-width:800px){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    > div{
+      margin-top: 15px;
+      a{
+        color: gray;
+        text-transform: uppercase;
+        margin-right: 10px;
+        font-weight: bold;
+        transition: all .3s ease-in-out;
+        &:hover{
+          color: red;
+          transition: all .3s ease-in-out;
+        }
+      }
+      a:first-of-type:not(.fa-magnifying-glass){
+        color: red;
+      }
 
+      .fa-magnifying-glass{
+        color: rgb(61, 61, 61);
+        font-weight: bold;
+        font-size: 18px;
+      }
+    }
+  }
+}

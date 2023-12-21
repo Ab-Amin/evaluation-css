@@ -34,5 +34,12 @@
 
   section:last-of-type{
     margin-top: 100px;
+    @media screen and (min-width:800px){
+      margin-bottom: 0;
+        .google-map{
+          grid-column: 1/-1;
+      }
+    }
   }
+
 }
