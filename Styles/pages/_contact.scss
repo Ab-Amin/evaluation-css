@@ -1,0 +1,38 @@
+.contact--page{
+
+  section:first-of-type{
+    form{
+      display: flex;
+      flex-direction: column;
+      textarea{
+        resize: vertical;
+        min-height: 40px;
+        width: 100%;
+        background-color: rgb(231, 231, 231);
+        border: none;
+      }
+      input:last-of-type{
+        background-color: white;
+        border: 2px solid black;
+        transition: all .15s ease-in-out;
+        &:hover{
+          cursor: pointer;
+          border-color: red;
+          color: red;
+          transition: all .15s ease-in-out;
+        }
+      }
+    }
+
+    > div:last-child{
+      p{
+        color: gray;
+      }
+    }
+  }
+
+
+  section:last-of-type{
+    margin-top: 100px;
+  }
+}

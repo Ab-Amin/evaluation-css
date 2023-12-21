@@ -1,0 +1,44 @@
+.about-us--page{
+
+  section:first-of-type{
+    > div{
+      margin: 100px 0;
+      p{
+        line-height: 30px;
+      }
+    }
+    
+  }
+
+  section:last-of-type{
+    > div{
+      .img-zoom{
+        margin-bottom: 30px;
+      }
+      .name{
+        text-transform: capitalize;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      > div:last-of-type{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        .socials{
+          width: 100px;
+          justify-content: space-around;
+          a{
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+}
