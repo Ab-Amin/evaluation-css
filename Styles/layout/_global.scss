@@ -1,28 +1,98 @@
-//• & = prent le meme 'nom' que le parent. ici & = a
+body{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
 
-// a{
-//   &:hover{    
-//   }
-// }
+.wrapper{
+  width: 95%;
+  margin: 0 auto;
+}
 
-//• lighten et darken + amount of it to change
+a{
+  text-decoration: none;
+}
 
-// body{
-//   background: lighten($color: $main-color, $amount: 10%);
-//   background: lighten($main-color, 10%);
-// }
+.menu-burger{
+  background-color: red;
+  margin-top: 10px;
+  margin-left: calc(5% / 2);
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  width: 100px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  .burger{
+    color: white;
+    width: 25px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    > div{
+      background-color: white;
+      height: 3px;
+      width: 20px;
+    }
+  }
+  > div:last-child{
+    margin-left: 5px;
+    text-transform: capitalize;
+  }
+  
+ }
+
+ .img-zoom{
+  overflow: hidden;
+  img{
+    width: 100%;
+    display: block;
+    transition: all .3s ease-in-out;
+  }
+  &:hover img{
+    scale: 1.1;
+    transition: all .3s ease-in-out;
+  }
+ }
 
 
+ .categorie{
+  width: fit-content;
+  background-color: red;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 4px 15px;
+}
 
+h1{
+  font-weight: normal;
+  font-size: 25px;
+  a{
+    color: black;
+  }
+}
+h2{
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 80px 0 45px;
+  border-bottom: 2px solid gray;
+  padding-bottom: 20px;
+}
 
+.dates{
+  font-style: italic;
+  color: gray;
+}
 
-
-
-
-
-
-
-
+.big-txt{
+  color: gray;
+  line-height: 25px;
+}
 
 
 

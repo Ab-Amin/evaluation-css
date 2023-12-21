@@ -1,4 +1,26 @@
+header{
+  border-bottom: 1px solid gray;
+  height: 150px;
+  
+  .wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    div:first-child{
+      width: 200px;
+      // img{}
+    }
 
+    div:last-child{
+      width: 100%;
+      // height: 60px;
+      img{
+        height: 100%;
+      } 
+    }
+  }
+}
 
 
 
