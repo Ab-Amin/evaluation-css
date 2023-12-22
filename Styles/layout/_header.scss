@@ -2,7 +2,7 @@ header{
   border-bottom: 1px solid gray;
   height: 150px;
   
-  .wrapper{
+  > div:first-child{
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@ header{
     }
   }
   @media screen and (min-width:800px){
-    .wrapper{
+    > div:first-child{
       display: flex;
       flex-direction: row;
       justify-content: center;

@@ -1,6 +1,7 @@
 .contact--page{
 
   section:first-of-type{
+    max-width: 600px;
     form{
       display: flex;
       flex-direction: column;
@@ -10,6 +11,11 @@
         width: 100%;
         background-color: rgb(231, 231, 231);
         border: none;
+        margin: 10px 0;
+        &::placeholder{
+          font-family: Arial;
+          padding: 10px;
+        }
       }
       input:last-of-type{
         background-color: white;
@@ -29,14 +35,20 @@
         color: gray;
       }
     }
+    @media screen and (min-width:1024px){
+      max-width: 900px;
+      > div:first-child{
+        max-width: 600px;
+      }
+    }
   }
 
 
-  section:last-of-type{
+  #map{
     margin-top: 100px;
     @media screen and (min-width:800px){
       margin-bottom: 0;
-        .google-map{
+        #google-map{
           grid-column: 1/-1;
       }
     }
